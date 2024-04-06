@@ -15,7 +15,6 @@ Both this application and Imebra are available under the GPLv2 or under a commer
 You can buy the commercial license at https://imebra.com
 
 
-==========================================================================================================================================================================================
 
 Multi-frame dicom files
 =======================
