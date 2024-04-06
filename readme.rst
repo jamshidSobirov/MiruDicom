@@ -13,3 +13,16 @@ License
 Both this application and Imebra are available under the GPLv2 or under a commercial license.
 
 You can buy the commercial license at https://imebra.com
+
+
+==========================================================================================================================================================================================
+
+Multi-frame dicom files
+=======================
+
+Hey guys, in my workplace I had a task to make a multi-frame dicom files and to view them, so I come up with a solution, hope you will enjoy my solution.
+I have used existing libraries in my project.
+I didn't have any chance to clean up my code, there are still some commented and unnecessary codes, sorry for that, you can use the parts you need.
+
+Here's the screen-recording of the app:
+
