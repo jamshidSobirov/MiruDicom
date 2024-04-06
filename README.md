@@ -1,6 +1,5 @@
-# Hands-Shot
+# multi-frame dicom
 
 
-
-https://user-images.githubusercontent.com/111081801/218298447-4e5f49e5-6b3b-4d6d-a688-f43f3b34dbc4.mp4
+https://github.com/jamshidSobirov/MiruDicom/assets/111081801/9816d85c-34ee-4b58-b4eb-5c806d662cdf
 
