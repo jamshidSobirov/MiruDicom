@@ -25,4 +25,3 @@ I have used existing libraries in my project.
 I didn't have any chance to clean up my code, there are still some commented and unnecessary codes, sorry for that, you can use the parts you need.
 
 Here's the screen-recording of the app:
-
