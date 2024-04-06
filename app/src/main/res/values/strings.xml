@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MiruDicom</string>
+    <string name="image_description">DICOM image</string>
+    <string name="button_description">Click to load a DICOM file</string>
+    <string name="create_dcm_file">Create a DICOM file</string>
+    <string name="load_dcm_file">Load a DICOM file from the directory</string>
+</resources>

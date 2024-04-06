@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DicomGenerateActivity">
+
+    <FrameLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#2B2B2B"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/round_ripple_transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Create a .dcm file"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor-related data:"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Name of the Doctor:"
+                android:textColor="#222222"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/tvDoctorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/et_background"
+                android:inputType="text"
+                android:padding="10dp"
+                android:text="Sobirov Jamshid"
+                android:textColor="#222222"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:text="Age of the Doctor:"
+                android:textColor="#222222"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/tvDoctorAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/et_background"
+                android:inputType="number"
+                android:padding="10dp"
+                android:text="32"
+                android:textColor="#222222"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:text="Sex of the Doctor:"
+                android:textColor="#222222"
+                android:textSize="12sp" />
+
+            <RadioGroup
+                android:id="@+id/rgDoctorSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbDoctorMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:buttonTint="#222222"
+                    android:checked="true"
+                    android:text="Male"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rbDoctorFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#222222"
+                    android:text="Female"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Patient-related data:"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Name of the Patient:"
+                android:textColor="#222222"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/tvPatientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/et_background"
+                android:inputType="text"
+                android:padding="10dp"
+                android:text="James Bond"
+                android:textColor="#222222"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:text="Age of the Patient:"
+                android:textColor="#222222"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/tvPatientAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/et_background"
+                android:inputType="number"
+                android:padding="10dp"
+                android:text="25"
+                android:textColor="#222222"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:text="Sex of the Patient:"
+                android:textColor="#222222"
+                android:textSize="12sp" />
+
+            <RadioGroup
+                android:id="@+id/rgPatientSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbPatientMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:buttonTint="#222222"
+                    android:checked="true"
+                    android:text="Male"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rbPatientFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#222222"
+                    android:text="Female"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Image-related data:"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Date:"
+                android:textColor="#222222"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/tvImageDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/et_background"
+                android:inputType="datetime"
+                android:padding="10dp"
+                android:text="21.06.2023"
+                android:textColor="#222222"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:text="Time:"
+                android:textColor="#222222"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/tvImageTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/et_background"
+                android:inputType="time"
+                android:padding="10dp"
+                android:text="22:22"
+                android:textColor="#222222"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:text="Image color information:"
+                android:textColor="#222222"
+                android:textSize="12sp" />
+
+            <RadioGroup
+                android:id="@+id/rgImageColorSpace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbRGB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:buttonTint="#222222"
+                    android:checked="true"
+                    android:text="RGB"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rbGrayscale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="#222222"
+                    android:text="Grayscale"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:text="Description:"
+                android:textColor="#222222"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/tvImageDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/et_background"
+                android:inputType="textMultiLine"
+                android:minHeight="40dp"
+                android:padding="10dp"
+                android:text="Click Refactor option in the android..."
+                android:textColor="#222222"
+                android:textSize="16sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGenerateDcm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:paddingVertical="10dp"
+                android:text="Add Photo(s)"
+                android:textAllCaps="false"
+                app:icon="@drawable/photo"
+                app:iconGravity="textEnd" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

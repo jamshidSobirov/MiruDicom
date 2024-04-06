@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".SecondaryActivity">
+
+    <TextView
+        android:id="@+id/tv_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Photograph" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/tv_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Birthday" />
+
+    <TextView
+        android:id="@+id/tv_institution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Institution" />
+
+    <TextView
+        android:id="@+id/tv_station"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Station" />
+
+    <TextView
+        android:id="@+id/tv_manufacturer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Manufacturer" />
+
+    <TextView
+        android:id="@+id/tv_manufacturerModelName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Manufacturer Model Name" />
+
+    <TextView
+        android:id="@+id/tv_StudyDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Study description" />
+
+    <TextView
+        android:id="@+id/tv_SeriesDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Series description" />
+
+    <TextView
+        android:id="@+id/tv_StudyDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Description Time" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="next"
+        android:text="next image" />
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:src="@drawable/github_logo" />
+
+</LinearLayout>

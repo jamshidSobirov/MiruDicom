@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jamesmobiledev.dicom.MainActivity">
+    <item
+        android:id="@+id/loadDcmFile"
+        android:contentDescription="@string/load_dcm_file"
+        android:icon="@drawable/icon_load_dcm"
+        android:title="@string/load_dcm_file"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/createDcmFile"
+        android:contentDescription="@string/create_dcm_file"
+        android:icon="@drawable/baseline_add_a_photo_24"
+        android:title="@string/create_dcm_file"
+        app:showAsAction="ifRoom" />
+
+
+</menu>
+
